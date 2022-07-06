@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Animation on scroll</title>
+</head>
+<body>
+   <header class="head">
+      <h1>Space Tourism</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, aspernatur.</p>
+   </header>
+
+   <main class="container">
+      <section class="space">
+         <img src="img/galaxy.jpg" alt="galaxy">
+         <div>
+            <h3>Spiral Galaxy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, illo libero reprehenderit nam voluptates itaque.</p>
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <a href="#" class="btn">Visit</a>
+         </div>
+      </section>
+
+      <section class="space" data-aos="fade-left">
+         <img src="img/earth.jpeg" alt="Earth">
+         <div>
+            <h3>Evergreen Earth</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, illo libero reprehenderit nam voluptates itaque.</p>
+            <a href="#" class="btn">Visit</a>
+         </div>
+      </section>
+
+      <section class="space" data-aos="fade-right">
+         <img src="img/neutron-star.jpeg" alt="Neutron-star">
+         <div>
+            <h3>Neutron-star</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, illo libero reprehenderit nam voluptates itaque.</p>
+            <a href="#" class="btn">Visit</a>
+         </div>
+      </section>
+
+      <section class="space" data-aos="fade-left">
+         <img src="img/full-moon.jpeg" alt="Full-moon">
+         <div>
+            <h3>Full-moon</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, illo libero reprehenderit nam voluptates itaque.</p>
+            <a href="#" class="btn">Visit</a>
+         </div>
+      </section>
+   </main>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
+  </script>
+</body>
+</html>
